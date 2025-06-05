@@ -1,21 +1,27 @@
+### Pre-requisites
 
-### **How to Run the Script:**
+Make sure you have the OpenCV library installed:
+
+```bash
+pip install opencv-python
+```
+
+---
+
+### Running the Script
 
 1. **Open a Terminal or Command Prompt:**
+   Navigate to the directory where the script (`image_batch_resize.py`) is located.
 
-   Open your terminal and navigate to the directory where the script is located.
+2. **Execute the Script with the Required Arguments:**
+   The script requires three arguments:
 
-2. **Run the Script with Command-Line Arguments:**
+   * **input\_folder:** The folder path containing the images to resize.
+   * **output\_folder:** The folder path where resized images will be saved.
+   * **resolution:** The target resolution (width and height) for the images.
 
-   The script accepts three arguments:
-   - `input_folder`: Path to the folder containing the images to resize.
-   - `output_folder`: Path to the folder where resized images will be saved.
-   - `resolution`: The target resolution (width and height) for resizing.
+   **Example command:**
 
-   Example command:
    ```bash
    python image_batch_resize.py "C:\path\to\input_folder" "C:\path\to\output_folder" 256 256
    ```
-
-   **Replace the paths** with your own folder paths and specify the resolution (e.g., 256 256 for square images).
-
